@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AnimalDataController">
+   <children>
+      <BorderPane prefHeight="1080.0" prefWidth="1920.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/BackgroundH.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="113.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/Arah.png" />
+                     </image></ImageView>
+                  <Label fx:id="namaHewan" layoutX="131.0" layoutY="184.0" prefHeight="73.0" prefWidth="772.0">
+                     <font>
+                        <Font name="Arial Bold" size="50.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="namaIlmiah" layoutX="135.0" layoutY="250.0" prefHeight="38.0" prefWidth="714.0">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="imageHewan" fitHeight="370.0" fitWidth="640.0" layoutX="123.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#372e2e" height="56.0" layoutX="127.0" layoutY="706.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="162.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#372e2e" height="56.0" layoutX="313.0" layoutY="706.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="162.0" />
+                  <Label fx:id="statusDaerah" layoutX="162.0" layoutY="716.0" prefHeight="36.0" prefWidth="92.0" textAlignment="CENTER" textFill="#44c225">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="statusPopulasi" layoutX="326.0" layoutY="716.0" prefHeight="36.0" prefWidth="130.0" textAlignment="CENTER" textFill="#ef3737">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="127.0" layoutY="799.0" text="Tentang">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="isiTentang" layoutX="126.0" layoutY="873.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="615.4287109375">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#d9d9d9" height="830.0" layoutX="918.0" layoutY="171.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="883.0" />
+                  <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#372e2e" height="80.0" layoutX="960.0" layoutY="222.0" stroke="BLACK" strokeType="INSIDE" width="368.0" />
+                  <Label layoutX="982.0" layoutY="237.0" text="Detail Informasi" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="animalDataButton" layoutX="141.0" layoutY="69.0" mnemonicParsing="false" onAction="#handleButtonAnimal" styleClass="buttonReporting" stylesheets="@../CSS/Reporting.css" text="Animal Data">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font></Button>
+                  <Label layoutX="968.0" layoutY="338.0" text="- Taksonomi">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="990.0" layoutY="386.0" text="Kerajaan :">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="990.0" layoutY="419.0" text="Filum :">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="990.0" layoutY="452.0" text="Kelas :">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="990.0" layoutY="487.0" text="Ordo :">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="990.0" layoutY="519.0" text="Famili :">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="989.0" layoutY="551.0" text="Genus :">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="989.0" layoutY="584.0" text="Species :">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1404.0" layoutY="338.0" text="- Jangkauan">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="kerajaan" layoutX="1092.0" layoutY="389.0" prefHeight="23.0" prefWidth="285.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="filum" layoutX="1062.0" layoutY="422.0" prefHeight="23.0" prefWidth="292.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="kelas" layoutX="1062.0" layoutY="455.0" prefHeight="23.0" prefWidth="285.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ordo" layoutX="1057.0" layoutY="490.0" prefHeight="23.0" prefWidth="300.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="famili" layoutX="1064.0" layoutY="521.0" prefHeight="23.0" prefWidth="294.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="genus" layoutX="1068.0" layoutY="554.0" prefHeight="23.0" prefWidth="300.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="species" layoutX="1079.0" layoutY="586.0" prefHeight="23.0" prefWidth="320.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="upaspesies" layoutX="1116.0" layoutY="619.0" prefHeight="23.0" prefWidth="280.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="jangkauan" layoutX="1420.0" layoutY="379.0" prefHeight="23.0" prefWidth="319.0">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="968.0" layoutY="675.0" text="- Populasi">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <BarChart fx:id="barChartPopulasi" layoutX="973.0" layoutY="759.0" prefHeight="213.0" prefWidth="758.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <Label layoutX="987.0" layoutY="722.0" prefHeight="23.0" prefWidth="285.0" text="Data Populasi Tahun ke Tahun">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

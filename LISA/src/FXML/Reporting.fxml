@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportingController">
+   <children>
+      <BorderPane prefHeight="1080.0" prefWidth="1920.0">
+         <center>
+            <AnchorPane prefHeight="1080.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/BackgroundH.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="113.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/Arah.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="reportButton" layoutX="141.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleReportButton" styleClass="buttonReporting" stylesheets="@../CSS/Reporting.css" text="Report">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="namaTextField" layoutX="162.0" layoutY="271.0" prefHeight="70.0" prefWidth="450.0" styleClass="TextFieldNama" stylesheets="@../CSS/Reporting.css" />
+                  <TextField fx:id="emailTextField" layoutX="162.0" layoutY="404.0" prefHeight="70.0" prefWidth="450.0" styleClass="TextFieldNama" stylesheets="@../CSS/Reporting.css" />
+                  <TextField fx:id="handphoneTextField" layoutX="682.0" layoutY="271.0" prefHeight="70.0" prefWidth="450.0" styleClass="TextFieldNama" stylesheets="@../CSS/Reporting.css" />
+                  <TextField fx:id="alamatTextField" layoutX="682.0" layoutY="404.0" prefHeight="70.0" prefWidth="450.0" styleClass="TextFieldNama" stylesheets="@../CSS/Reporting.css" />
+                  <TextField fx:id="lokasiTextField" layoutX="1204.0" layoutY="271.0" prefHeight="70.0" prefWidth="450.0" styleClass="TextFieldNama" stylesheets="@../CSS/Reporting.css" />
+                  <TextField fx:id="waktuTextField" layoutX="1204.0" layoutY="404.0" prefHeight="70.0" prefWidth="450.0" styleClass="TextFieldNama" stylesheets="@../CSS/Reporting.css" />
+                  <TextField fx:id="namaHewanTextField" layoutX="165.0" layoutY="635.0" prefHeight="70.0" prefWidth="450.0" styleClass="TextFieldNama" stylesheets="@../CSS/Reporting.css" />
+                  <TextField fx:id="jenisHewanTextField" layoutX="682.0" layoutY="635.0" prefHeight="70.0" prefWidth="450.0" styleClass="TextFieldNama" stylesheets="@../CSS/Reporting.css" />
+                  <TextField fx:id="kondisiHewanTextField" layoutX="1204.0" layoutY="635.0" prefHeight="70.0" prefWidth="450.0" styleClass="TextFieldNama" stylesheets="@../CSS/Reporting.css" />
+                  <Label layoutX="163.0" layoutY="225.0" text="Nama">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="163.0" layoutY="358.0" text="Email">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="683.0" layoutY="225.0" text="Handphone">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="683.0" layoutY="358.0" text="Alamat">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1204.0" layoutY="225.0" text="Lokasi Penemuan">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1204.0" layoutY="362.0" text="Waktu Penemuan">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1204.0" layoutY="589.0" text="Kondisi hewan">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="683.0" layoutY="589.0" text="Jenis Hewan">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="163.0" layoutY="589.0" text="Nama Hewan">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="163.0" layoutY="733.0" text="Ciri-ciri Hewan">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#372e2e" height="50.0" layoutX="162.0" layoutY="155.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="245.0" />
+                  <Label layoutX="209.0" layoutY="162.0" text="Data Pelapor" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#372e2e" height="50.0" layoutX="163.0" layoutY="517.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="245.0" />
+                  <Label layoutX="210.0" layoutY="524.0" text="Data Hewan" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ciriHewanTextField" layoutX="165.0" layoutY="787.0" prefHeight="68.0" prefWidth="1492.0" styleClass="TextFieldNama" stylesheets="@../CSS/Reporting.css" />
+                  <Button fx:id="kirimButton" layoutX="167.0" layoutY="910.0" mnemonicParsing="false" onAction="#handleKirimButton" prefHeight="45.0" prefWidth="121.0" styleClass="ButtonBatalKnR" stylesheets="@../CSS/Reporting.css" text="Kirim" textFill="WHITE" />
+                  <Button fx:id="resetButton" layoutX="301.0" layoutY="910.0" mnemonicParsing="false" onAction="#handleResetButton" prefHeight="45.0" prefWidth="121.0" styleClass="ButtonBatalKnR" stylesheets="@../CSS/Reporting.css" text="Reset" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

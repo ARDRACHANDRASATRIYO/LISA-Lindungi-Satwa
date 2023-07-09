@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MyReportingController">
+   <children>
+      <BorderPane prefHeight="1080.0" prefWidth="1920.0">
+         <center>
+            <AnchorPane prefHeight="780.0" prefWidth="1422.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/BackgroundH.jpg" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#372e2e" height="519.0" layoutX="113.0" layoutY="479.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1675.0" />
+                  <Label layoutX="144.0" layoutY="210.0" text="Dashboard">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tableView" layoutX="175.0" layoutY="575.0" prefHeight="307.0" prefWidth="1552.0" stylesheets="@../CSS/Reporting.css">
+                    <columns>
+                      <TableColumn fx:id="dateColumn" prefWidth="141.0" text="Date" />
+                      <TableColumn fx:id="nameColumn" minWidth="0.0" prefWidth="141.0" text="Nama Pelapor" />
+                        <TableColumn fx:id="handphoneColumn" prefWidth="155.0" text="Handphone" />
+                        <TableColumn fx:id="emailColumn" minWidth="0.0" prefWidth="181.0" text="Email" />
+                        <TableColumn fx:id="namaHewanColumn" minWidth="0.0" prefWidth="160.0" text="Nama Hewan" />
+                        <TableColumn fx:id="lokasiColumn" prefWidth="230.0" text="Lokasi Penemuan" />
+                        <TableColumn fx:id="kondisiColumn" prefWidth="149.0" text="Kondisi Hewan" />
+                        <TableColumn fx:id="ciriColumn" prefWidth="265.3333740234375" text="Ciri Ciri Hewan" />
+                        <TableColumn fx:id="statusColumn" prefWidth="128.6666259765625" text="Status" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="reportingButton" layoutX="141.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleButtonReporting" styleClass="buttonReporting" stylesheets="@../CSS/Reporting.css" text="Reporting">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="180.0" layoutY="515.0" text="History" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="300.0" fitWidth="1675.0" layoutX="113.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/Buaya.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="174.0" layoutY="190.0" prefHeight="51.0" prefWidth="1083.0" text="Selamatkan hewan yang anda temukan dengan Laporkan kepada Kita" textFill="WHITE">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="169.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ada banyak hewan terlantar yang butuh bantuan kita" wrappingWidth="466.13671875">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="reportButton" layoutX="1632.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleButtonReport" prefHeight="37.0" prefWidth="105.0" styleClass="ButtonReport" stylesheets="@../CSS/Reporting.css" text="Report" textFill="#372e2e">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="113.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/Arah.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="batalButton" layoutX="1603.0" layoutY="915.0" mnemonicParsing="false" onAction="#handleBatalButton" prefHeight="44.0" prefWidth="124.0" styleClass="ButtonBatalReport" stylesheets="@../CSS/Reporting.css" text="Batalkan Report" textFill="#372e2e">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

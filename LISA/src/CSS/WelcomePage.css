@@ -1,0 +1,17 @@
+.ButtonLogin {
+  -fx-background-color: #372E2E;
+  -fx-font-family: 'Secular One';
+  -fx-font-size: 20;
+}
+
+.ButtonSignUp {
+  -fx-background-color: #372E2E;
+  -fx-font-family: 'Secular One';
+  -fx-font-size: 13;
+}
+
+.ButtonGuest {
+  -fx-background-color: #372E2E;
+  -fx-font-family: 'Secular One';
+  -fx-font-size: 13;
+}

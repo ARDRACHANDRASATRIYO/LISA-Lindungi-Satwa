@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WelcomePageController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="1080.0" prefWidth="1920.0">
+         <center>
+            <AnchorPane prefHeight="1080.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="backgroundImageView" fitHeight="1281.0" fitWidth="1920.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="528.0" fitWidth="704.0" pickOnBounds="true" preserveRatio="true" x="-87.0" y="-86.0">
+                     <image>
+                        <Image url="@../Photo/Lisa_Logo-removebg.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="signUp" layoutX="970.0" layoutY="911.0" mnemonicParsing="false" onAction="#handleButtonSignUp" prefHeight="34.0" prefWidth="135.0" style="-fx-background-color: 372E2E;" styleClass="ButtonSignUp" stylesheets="@../CSS/WelcomePage.css" text="SignUp" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Button>
+                  <Button fx:id="login" layoutX="820.0" layoutY="830.0" mnemonicParsing="false" onAction="#handleButtonLogin" prefHeight="70.0" prefWidth="280.0" style="-fx-background-color: 372E2E;" styleClass="ButtonLogin" text="Login" textFill="WHITE">
+                     <stylesheets>
+                        <URL value="@../CSS/view1.css" />
+                        <URL value="@../CSS/WelcomePage.css" />
+                     </stylesheets></Button>
+                  <Label layoutX="822.0" layoutY="919.0" text="Belum Punya Akun?" textFill="WHITE" />
+                  <Button fx:id="guest" layoutX="970.0" layoutY="956.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="135.0" style="-fx-background-color: 372E2E;" styleClass="ButtonGuest" stylesheets="@../CSS/WelcomePage.css" text="Guest" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="815.0" layoutY="962.0" text="Masuk Sebagai Guest" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

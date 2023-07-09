@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
+   <children>
+      <BorderPane prefHeight="1080.0" prefWidth="1920.0">
+         <center>
+            <AnchorPane prefHeight="777.0" prefWidth="642.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/4.jpeg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="414.0" fitWidth="552.0" layoutX="-73.0" layoutY="-71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/Lisa_Logo-removebg.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#fdfeff" height="883.0" layoutX="1189.0" layoutY="99.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="640.0" />
+                  <Label fx:id="l1" layoutX="1405.0" layoutY="172.0" text="Register">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="namaTextField" layoutX="1285.0" layoutY="326.0" minHeight="70.0" prefWidth="450.0" styleClass="TextFieldName" stylesheets="@../CSS/Register.css" />
+                  <Label fx:id="l2" layoutX="1285.0" layoutY="280.0" text="Nama">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <TextField fx:id="emailTextField" layoutX="1285.0" layoutY="592.0" minHeight="70.0" prefWidth="450.0" styleClass="TextFielEmail" stylesheets="@../CSS/Register.css" />
+                  <Label fx:id="l4" layoutX="1285.0" layoutY="546.0" text="Email">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <TextField fx:id="passwordTextField" layoutX="1285.0" layoutY="715.0" minHeight="70.0" prefWidth="450.0" styleClass="TextFieldPassword" stylesheets="@../CSS/Register.css" />
+                  <Label fx:id="l5" layoutX="1285.0" layoutY="415.0" text="Handphone">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <TextField fx:id="handphoneTextField" layoutX="1285.0" layoutY="461.0" minHeight="70.0" prefWidth="450.0" styleClass="TextFieldHandphone" stylesheets="@../CSS/Register.css" />
+                  <Label fx:id="l6" layoutX="1285.0" layoutY="677.0" text="Password">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+                  <Button fx:id="signUpButton" layoutX="1410.0" layoutY="843.0" mnemonicParsing="false" onAction="#handleButtonRegisterUser" prefHeight="50.0" prefWidth="200.0" style="-fx-font-family: Secular One;" styleClass="ButtonSignUp" stylesheets="@../CSS/Register.css" text="Sign Up" textFill="WHITE" />
+                  <Label fx:id="labelPeringatan1" layoutX="1391.0" layoutY="797.0" prefHeight="23.0" prefWidth="150.0" text="Sudah mempunyai Akun?" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="loginButton" layoutX="1541.0" layoutY="797.0" mnemonicParsing="false" onAction="#handleButtonLogin" styleClass="buttonReporting" stylesheets="@../CSS/Reporting.css" text="Masuk Disini!">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="kembaliAction" layoutX="100.0" layoutY="83.0" mnemonicParsing="false" onAction="#handleButtonKembali" prefHeight="93.0" prefWidth="229.0" textFill="WHITE">
+                     <stylesheets>
+                        <URL value="@../CSS/Login.css" />
+                        <URL value="@../CSS/Reporting.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="ButtonLogin" />
+                        <String fx:value="buttonReporting" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

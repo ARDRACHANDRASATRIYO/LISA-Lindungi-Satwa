@@ -1,0 +1,14 @@
+{
+"java.configuration.runtimes": [
+      {
+        "name": "JavaSE-9",
+        "path": "C:\\Program Files\\Java\\jdk-9.0.4",
+        "default": true
+      }
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\satri\\OneDrive\\Documents\\xstream-1.4.20.jar",
+        "c:\\Users\\satri\\Downloads\\jbcrypt-0.4.jar"
+    ]
+}

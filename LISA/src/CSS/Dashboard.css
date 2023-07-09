@@ -1,0 +1,29 @@
+.ButtonReporting {
+    -fx-background-color: #372E2E;
+    -fx-font-family: 'Secular One';
+    -fx-font-size: 20;
+}
+
+.ButtonDonation {
+    -fx-background-color: #372E2E;
+    -fx-font-family: 'Secular One';
+    -fx-font-size: 20;
+}
+
+.ButtonAbout {
+    -fx-background-color: #372E2E;
+    -fx-font-family: 'Secular One';
+    -fx-font-size: 20;
+}
+
+.Button1 {
+    -fx-background-color: #372E2E;
+    -fx-font-family: 'Secular One';
+    -fx-font-size: 15;
+}
+
+.choice-box {
+    -fx-background-color: #D9D9D9;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #000000; 
+}

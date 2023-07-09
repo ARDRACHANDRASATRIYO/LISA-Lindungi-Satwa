@@ -1,0 +1,23 @@
+.TextFieldEmail {
+    -fx-background-color: #D9D9D9;
+    -fx-border-color: #D9D9D9;
+    -fx-border-radius: 5;
+    -fx-font-family: 'Secular One';
+    -fx-font-size: 20;
+    -fx-padding: 10;
+}
+
+.TextFieldPassword {
+    -fx-background-color: #D9D9D9;
+    -fx-border-color: #D9D9D9;
+    -fx-border-radius: 5;
+    -fx-font-family: 'Secular One';
+    -fx-font-size: 20;
+    -fx-padding: 10;
+}
+
+.ButtonLogin {
+    -fx-background-color: #372E2E;
+    -fx-font-family: 'Secular One';
+    -fx-font-size: 15;
+}

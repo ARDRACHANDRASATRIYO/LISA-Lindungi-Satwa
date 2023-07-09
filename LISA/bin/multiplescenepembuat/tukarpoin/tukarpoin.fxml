@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane prefHeight="552.0" prefWidth="1052.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1198.0" prefWidth="1033.0">
+               <children>
+                  <Label layoutX="273.0" layoutY="51.0" text="Tukar Poin" textFill="GOLD">
+                     <font>
+                        <Font name="Bell MT Bold" size="96.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="452.0" fitWidth="942.0" layoutX="55.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../logo/BriCoin.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InputBarChartController">
+   <children>
+      <BorderPane prefHeight="1080.0" prefWidth="1920.0">
+         <left>
+            <AnchorPane prefHeight="1080.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="1091.0" fitWidth="1927.0" layoutX="-1.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/BackgroundH.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="113.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Photo/Arah.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="141.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleDonationButtonClick" prefHeight="65.0" prefWidth="215.0" styleClass="buttonReporting" stylesheets="@../CSS/Reporting.css" text="Input Data ">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="tahunTextField" layoutX="172.0" layoutY="197.0" prefHeight="40.0" prefWidth="292.0">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></TextField>
+                  <TextField fx:id="populasiTextField" layoutX="533.0" layoutY="198.0" prefHeight="39.0" prefWidth="291.0" />
+                  <Button fx:id="saveButton" layoutX="865.0" layoutY="197.0" mnemonicParsing="false" onAction="#handleSaveButtonClick" prefHeight="40.0" prefWidth="110.0" text="Save" />
+                  <Label layoutX="172.0" layoutY="159.0" text="Tahun">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="533.0" layoutY="159.0" text="Populasi">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
